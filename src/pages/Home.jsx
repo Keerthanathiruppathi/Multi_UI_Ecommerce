@@ -45,7 +45,9 @@ function Home() {
           <p className="eyebrow">{isTech ? '03 / Concierge protocol' : 'Why choose us'}</p>
           <h3>{isTech ? 'Need help configuring your kit?' : 'Curated shopping, just better.'}</h3>
         </div>
-        <Button>Talk to a shopping expert</Button>
+        <Link to="/contact">
+          <Button>Talk to a shopping expert</Button>
+        </Link>
       </section>
     </div>
   );
