@@ -1,6 +1,6 @@
 import Button from '../common/Button';
 import ProductScene3D from './ProductScene3D';
-import { useTemplate } from '../../templates/TemplateShell';
+import { useTemplate } from '../../templates/useTemplate';
 
 function HeroBanner({ banner, onPrimaryAction }) {
   const templateName = useTemplate();

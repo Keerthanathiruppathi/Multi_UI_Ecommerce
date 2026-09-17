@@ -5,10 +5,10 @@ import QuantitySelector from '../components/common/QuantitySelector';
 import Button from '../components/common/Button';
 import ProductGrid from '../components/ecommerce/ProductGrid';
 import { getProductById, products } from '../data/products';
-import { useCart } from '../context/CartContext';
-import { useWishlist } from '../context/WishlistContext';
+import { useCart } from '../context/useCart';
+import { useWishlist } from '../context/useWishlist';
 import { useMemo, useState } from 'react';
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 import { getTemplateProductImage } from '../config/templatePresentation';
 
 function ProductDetails() {

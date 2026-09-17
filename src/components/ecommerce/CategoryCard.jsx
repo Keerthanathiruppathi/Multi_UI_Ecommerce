@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useTemplate } from '../../templates/TemplateShell';
+import { useTemplate } from '../../templates/useTemplate';
 import { getTemplateCategoryImage } from '../../config/templatePresentation';
 
 function CategoryCard({ category, index = 0 }) {

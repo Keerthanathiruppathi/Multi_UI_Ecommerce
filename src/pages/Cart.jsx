@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../context/useCart';
 import CartItem from '../components/ecommerce/CartItem';
 import Button from '../components/common/Button';
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 
 function Cart() {
   const templateName = useTemplate();

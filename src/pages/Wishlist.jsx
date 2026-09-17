@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext';
-import { useWishlist } from '../context/WishlistContext';
+import { useCart } from '../context/useCart';
+import { useWishlist } from '../context/useWishlist';
 import ProductGrid from '../components/ecommerce/ProductGrid';
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 
 function Wishlist() {
   const templateName = useTemplate();

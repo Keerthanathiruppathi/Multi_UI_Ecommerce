@@ -1,4 +1,4 @@
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 
 function Contact() {
   const templateName = useTemplate();

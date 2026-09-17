@@ -1,6 +1,6 @@
 import CategoryGrid from '../components/ecommerce/CategoryGrid';
 import { categories } from '../data/categories';
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 
 function Categories() {
   const templateName = useTemplate();

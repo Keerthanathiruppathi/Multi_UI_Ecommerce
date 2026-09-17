@@ -1,5 +1,3 @@
-import { createProductGraphic } from './medicalArt';
-
 export const bannerData = [
   {
     id: 1,

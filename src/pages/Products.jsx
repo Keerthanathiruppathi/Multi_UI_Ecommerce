@@ -4,7 +4,7 @@ import SearchBar from '../components/ecommerce/SearchBar';
 import { categories } from '../data/categories';
 import { products } from '../data/products';
 import { useSearchParams } from 'react-router-dom';
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 
 function Products() {
   const templateName = useTemplate();

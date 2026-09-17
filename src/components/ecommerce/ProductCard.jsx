@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import Rating from '../common/Rating';
 import PriceDisplay from '../common/PriceDisplay';
 import Button from '../common/Button';
-import { useCart } from '../../context/CartContext';
-import { useWishlist } from '../../context/WishlistContext';
-import { useTemplate } from '../../templates/TemplateShell';
+import { useCart } from '../../context/useCart';
+import { useWishlist } from '../../context/useWishlist';
+import { useTemplate } from '../../templates/useTemplate';
 import { getTemplateProductImage } from '../../config/templatePresentation';
 
 function ProductCard({ product }) {

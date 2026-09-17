@@ -1,22 +1,16 @@
 import { Link, NavLink, useNavigate, useSearchParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 import SearchBar from '../ecommerce/SearchBar';
-import { useCart } from '../../context/CartContext';
-import { useWishlist } from '../../context/WishlistContext';
+import { useCart } from '../../context/useCart';
+import { useWishlist } from '../../context/useWishlist';
 
 function Header({ templateName = 'modern', onTemplateChange }) {
   const { cartCount } = useCart();
   const { wishlistCount } = useWishlist();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
-  const [searchQuery, setSearchQuery] = useState(() => searchParams.get('search') || '');
-
-  useEffect(() => {
-    setSearchQuery(searchParams.get('search') || '');
-  }, [searchParams]);
+  const searchQuery = searchParams.get('search') || '';
 
   const handleSearch = (value) => {
-    setSearchQuery(value);
     const nextParams = new URLSearchParams(searchParams);
 
     if (value.trim()) {

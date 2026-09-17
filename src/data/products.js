@@ -1,5 +1,3 @@
-import { createProductGraphic } from './medicalArt';
-
 export const products = [
   {
     id: 1,

@@ -1,11 +1,7 @@
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { getThemeVars } from '../config/themeConfig';
-import { createContext, useContext } from 'react';
-
-const TemplateContext = createContext('classic');
-
-export const useTemplate = () => useContext(TemplateContext);
+import { TemplateContext } from './TemplateContextValue';
 
 function TemplateShell({ templateName, onTemplateChange, children }) {
   const themeVars = getThemeVars(templateName);

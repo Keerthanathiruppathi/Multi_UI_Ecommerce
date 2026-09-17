@@ -1,6 +1,5 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react';
-
-const WishlistContext = createContext();
+import { useEffect, useMemo, useState } from 'react';
+import { WishlistContext } from './WishlistContextValue';
 
 const WISHLIST_STORAGE_KEY = 'northstar-wishlist';
 
@@ -52,12 +51,3 @@ export function WishlistProvider({ children }) {
   return <WishlistContext.Provider value={value}>{children}</WishlistContext.Provider>;
 }
 
-export function useWishlist() {
-  const context = useContext(WishlistContext);
-
-  if (!context) {
-    throw new Error('useWishlist must be used within WishlistProvider');
-  }
-
-  return context;
-}

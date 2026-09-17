@@ -6,7 +6,7 @@ import Button from '../components/common/Button';
 import { bannerData } from '../data/bannerData';
 import { categories } from '../data/categories';
 import { featuredProducts } from '../data/products';
-import { useTemplate } from '../templates/TemplateShell';
+import { useTemplate } from '../templates/useTemplate';
 import { getTemplateHero } from '../config/templatePresentation';
 
 function Home() {
